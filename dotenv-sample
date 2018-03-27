@@ -1,0 +1,5 @@
+//create a .env in this directory, add your enviroment variables
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=s1mpl3
+JWTSECRET=secr3t
