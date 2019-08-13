@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-let server = require('../index.js');
-let pg = require('../db/postgres');
+const server = require('../index.js');
+const pg = require('../db/postgres');
 
-pg.initialize(function(err){
+pg.initialize((err)=> {
   if(err){
     throw err;
   }
