@@ -1,7 +1,6 @@
 require('dotenv').config()
 const express = require('express');
 const logger = require('morgan');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const jwt = require('express-jwt');
 const expressValidator = require('express-validator');
@@ -11,11 +10,9 @@ app.disable('x-powered-by');
 app.use('/api/', jwt({ secret: process.env.JWTSECRET }).unless({path: ['/login']}));
 cors({ credentials: true, origin: true });
 app.use(cors());
-app.use(bodyParser.json({ type: 'application/json' }));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(expressValidator());
 
-app.locals.title = "upload server";
 if (process.env.NODE_ENV !== 'test') {
   app.use(logger('dev'));
 }
