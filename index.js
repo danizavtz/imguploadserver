@@ -6,7 +6,6 @@ const jwt = require('express-jwt');
 const expressValidator = require('express-validator');
 
 const app = express();
-app.disable('x-powered-by');
 app.use('/api/', jwt({ secret: process.env.JWTSECRET }).unless({path: ['/login']}));
 cors({ credentials: true, origin: true });
 app.use(cors());
