@@ -22,21 +22,17 @@
   },
   "homepage": "https://github.com/danizavtz/imguploadserver#readme",
   "dependencies": {
-    "cors": "^2.8.4",
-    "dotenv": "^5.0.1",
-    "express": "^4.16.3",
-    "express-jwt": "^5.3.1",
-    "express-validator": "^5.0.3",
-    "multer": "^1.3.0",
-    "pg": "^7.4.1"
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "express-validator": "^6.6.0",
+    "multer": "^1.4.2",
+    "pg": "^8.2.1"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^4.19.1",
-    "istanbul": "^0.4.5",
-    "mocha": "^5.0.5",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.19.4",
-    "supertest": "^3.0.0"
+    "eslint": "^7.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
   }
 }
